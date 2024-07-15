@@ -1,0 +1,16 @@
+#Write a Python program to find the Nth Fibonacci number. 
+The program should take the value of N as input where n=8 
+Output 0 1 1 2 3 5 8 13"
+
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    while len(sequence) < n:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+n = 8  # You can change this value to any positive integer
+fib_sequence = fibonacci(n)
+
+print(fib_sequence)
