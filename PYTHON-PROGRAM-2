@@ -1,0 +1,27 @@
+#Find the year of the given Anniversary is leap year or not. If 
+leap year then print the next Anniversary, if not leap year 
+then print the previous Anniversary.
+Sample Input: Enter Date: 04/11/1947
+Sample Output: Given Anniversary Year: Non Leap Year. 
+Anniversary Date: 04/11/1946
+
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+
+def get_anniversary_date(date):
+    day, month, year = map(int, date.split('/'))
+    if is_leap_year(year):
+        next_anniversary_year = year + 1
+        print(f"Given Anniversary Year: Leap Year.")
+        print(f"Anniversary Date: {day:02d}/{month:02d}/{next_anniversary_year}")
+    else:
+        previous_anniversary_year = year - 1
+        print(f"Given Anniversary Year: Non Leap Year.")
+        print(f"Anniversary Date: {day:02d}/{month:02d}/{previous_anniversary_year}")
+
+# Sample Input
+date = "04/11/1947"
+get_anniversary_date(date)
