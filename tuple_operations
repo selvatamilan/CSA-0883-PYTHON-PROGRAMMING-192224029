@@ -1,0 +1,16 @@
+def tuple_operations(tuple1, tuple2, element):
+    concatenated = tuple1 + tuple2
+    index_of_element = concatenated.index(element)
+    count_of_element = concatenated.count(element)
+    return concatenated, index_of_element, count_of_element
+ 
+# Sample input
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+element = 3
+ 
+# Sample output
+concatenated, index_of_element, count_of_element = tuple_operations(tuple1, tuple2, element)
+print(f"Concatenated tuple: {concatenated}")
+print(f"Index of element {element}: {index_of_element}")
+print(f"Number of occurrences of element {element}: {count_of_element}")
