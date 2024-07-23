@@ -1,0 +1,8 @@
+def max_binary(bin1, bin2, bin3):
+    return max(bin1, bin2, bin3, key=lambda x: int(x, 2))
+ 
+# Example usage
+bin1 = "1101"
+bin2 = "1011"
+bin3 = "1001"
+print(f"Maximum Number: {max_binary(bin1, bin2, bin3)}")
