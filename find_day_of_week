@@ -1,0 +1,10 @@
+import datetime
+def find_day_of_week(day, month, year):
+    date = datetime.datetime(year, month, day)
+    return date.strftime("%A")
+ 
+# Example usage
+day = 31
+month = 8
+year = 2019
+print(find_day_of_week(day, month, year)) # Saturday
