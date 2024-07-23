@@ -1,0 +1,10 @@
+def convert_case(s):
+    return s.upper(), s.lower()
+ 
+# Sample input
+s = "PYTHON IS VERY SIMPLE"
+ 
+# Sample output
+uppercase, lowercase = convert_case(s)
+print(f"Uppercase String: {uppercase}")
+print(f"Lowercase String: {lowercase}")
