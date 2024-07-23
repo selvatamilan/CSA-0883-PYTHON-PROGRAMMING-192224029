@@ -1,0 +1,7 @@
+def initialize_dictionary():
+    fruits = {'Apple': 5, 'Orange': 10, 'Banana': 12}
+    for key, value in fruits.items():
+        print(f"{key} : {value}")
+ 
+# Sample output
+initialize_dictionary()
