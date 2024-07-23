@@ -1,0 +1,12 @@
+def create_person_info():
+    person_info = {
+        "name": "John Doe",
+        "age": 30,
+        "gender": "Male",
+        "city": "New York"
+    }
+    return person_info
+ 
+# Example usage
+person_info = create_person_info()
+print(f"Length of Dictionary: {len(person_info)}")
