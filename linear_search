@@ -1,0 +1,9 @@
+def linear_search(lst, target):
+    return "Exist" if target in lst else "Not exist"
+ 
+# Example usage
+lst = [2, 4, 6, 8, 9, 7, 9]
+target = 7
+print(f"Target: {target} -> {linear_search(lst, target)}")
+target = 5
+print(f"Target: {target} -> {linear_search(lst, target)}")
