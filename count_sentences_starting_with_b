@@ -1,0 +1,27 @@
+def count_sentences_starting_with_b(paragraph):
+    # Split the paragraph into lines
+    lines = paragraph.strip().split('\n')
+    num_lines = len(lines)
+    
+    # Count the number of sentences starting with 'B'
+    b_count = sum(1 for line in lines if line.strip().startswith('B'))
+
+    return num_lines, b_count
+
+def main():
+    paragraph = '''The apple doesn't fall. ...
+All that glitters are not gold. ...
+A picture is worth a thousand words. ...
+Beggars can't be choosers. ...
+A bird in the hand. ...
+Better safe than sorry. ...
+An apple a day keeps doctor away. ...
+Blood is thicker than water. ...'''
+    
+    num_lines, b_count = count_sentences_starting_with_b(paragraph)
+    
+    print(f"Total number of lines: {num_lines}")
+    print(f"Number of sentences that start with letter B: {b_count}")
+
+if __name__ == "__main__":
+    main()
