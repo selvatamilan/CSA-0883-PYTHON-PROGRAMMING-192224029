@@ -1,0 +1,26 @@
+def count_words_and_lines(paragraph):
+    # Split the paragraph into lines
+    lines = paragraph.strip().split('\n')
+    num_lines = len(lines)
+    
+    # Print the number of lines
+    print(f"Number of lines: {num_lines}")
+    
+    # Iterate over each line and count the words
+    for i, line in enumerate(lines):
+        num_words = len(line.split())
+        print(f"Line {i + 1}: {num_words}")
+
+def main():
+    paragraph = '''This is the most straightforward way to count the number
+of lines in a text file in Python. The readlines() method reads
+all
+lines from a file and stores it in a list. Next, use the len()
+function
+to find the length of the list which is nothing but total lines
+present in a file.'''
+    
+    count_words_and_lines(paragraph)
+
+if __name__ == "__main__":
+    main()
