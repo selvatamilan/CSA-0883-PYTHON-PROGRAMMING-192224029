@@ -1,0 +1,13 @@
+def ticket_price(age):
+    if 0 <= age <= 3:
+        return "The ticket is free."
+    elif 4 <= age <= 12:
+        return "The ticket price is Rs 10."
+    else:
+        return "The ticket price is Rs 20."
+ 
+# Sample input
+age = 5
+ 
+# Sample output
+print(ticket_price(age))
