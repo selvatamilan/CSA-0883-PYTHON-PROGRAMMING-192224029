@@ -1,0 +1,9 @@
+def count_occurrences(tpl, target):
+    return tpl.count(target)
+ 
+# Sample input
+tpl = (3, 6, 8, 9, 8, 9, 12, 35, 8)
+target = 8
+ 
+# Sample output
+print(count_occurrences(tpl, target))
