@@ -1,0 +1,20 @@
+def find_character(string, char):
+    # Iterate over the string and check for the character
+    for index in range(len(string)):
+        if string[index] == char:
+            return index
+    return -1
+
+def main():
+    string = input("Enter the string: ")
+    char = input("Enter the character to be searched: ")
+    
+    index = find_character(string, char)
+    
+    if index != -1:
+        print(f"{char} is found in string at index: {index}")
+    else:
+        print(f"{char} is not found in the string")
+
+if __name__ == "__main__":
+    main()
