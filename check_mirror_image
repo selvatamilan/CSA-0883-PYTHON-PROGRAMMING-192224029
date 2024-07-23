@@ -1,0 +1,13 @@
+def check_mirror_image(number):
+    # Convert the number to string to reverse it
+    reversed_number = number[::-1]
+    return reversed_number
+
+def main():
+    number = input("Enter the number: ")
+    reversed_number = check_mirror_image(number)
+    
+    print(f"Mirror image: {reversed_number}")
+
+if __name__ == "__main__":
+    main()
