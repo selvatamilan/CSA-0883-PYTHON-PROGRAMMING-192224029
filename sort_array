@@ -1,0 +1,8 @@
+def sort_array(arr):
+    if any(x < 0 for x in arr):
+        average = sum(arr) // len(arr)
+        arr = [average if x < 0 else x for x in arr]
+    return sorted(arr)
+ 
+arr = [9, 0, 4, 5, 6]
+print(sort_array(arr)) # Output: [0, 4, 5, 6, 9]
