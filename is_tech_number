@@ -1,0 +1,12 @@
+def is_tech_number(n):
+    num_str = str(n)
+    if len(num_str) % 2 != 0:
+        return False
+    half_len = len(num_str) // 2
+    first_half = int(num_str[:half_len])
+    second_half = int(num_str[half_len:])
+    return (first_half + second_half) ** 2 == n
+ 
+# Example usage
+n = 2025
+print(is_tech_number(n))
