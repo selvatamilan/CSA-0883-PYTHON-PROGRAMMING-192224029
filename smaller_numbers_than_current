@@ -1,0 +1,5 @@
+def smaller_numbers_than_current(nums):
+    return [sum(x < num for x in nums) for num in nums]
+ 
+nums = [8, 1, 2, 2, 3]
+print(smaller_numbers_than_current(nums)) # Output: [4, 0, 1, 1, 3]
