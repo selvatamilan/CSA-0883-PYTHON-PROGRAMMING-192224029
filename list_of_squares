@@ -1,0 +1,16 @@
+def list_of_squares(lower, upper):
+    if lower > upper:
+        return []
+    return [(x, x**2) for x in range(lower, upper + 1)]
+ 
+# Sample Input
+lower_range = 45
+upper_range = 49
+print(list_of_squares(lower_range, upper_range))
+ 
+# Test cases
+print(list_of_squares(50, 100))
+print(list_of_squares(5, 8))
+print(list_of_squares(10, 5))
+print(list_of_squares(500, 500))
+print(list_of_squares(0, -100))
