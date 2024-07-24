@@ -1,0 +1,22 @@
+def concatenate_strings(str1, str2):
+    return str1 + str2
+ 
+# Reverse
+def reverse_string(s):
+    return s[::-1]
+ 
+# Slice
+def slice_string(s, start, end):
+    return s[start:end]
+ 
+# Length
+def string_length(s):
+    return len(s)
+ 
+# Example usage
+str1 = "Hello"
+str2 = "World"
+print(concatenate_strings(str1, str2))
+print(reverse_string(str1))
+print(slice_string(str1, 1, 4))
+print(string_length(str1))
