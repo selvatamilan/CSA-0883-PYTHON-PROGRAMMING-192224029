@@ -1,0 +1,7 @@
+def is_substring(sub, main):
+    return sub in main
+ 
+# Example usage
+sub = "lo"
+main = "Hello"
+print(is_substring(sub, main))
