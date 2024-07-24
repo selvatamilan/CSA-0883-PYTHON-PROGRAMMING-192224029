@@ -1,0 +1,4 @@
+def sum_multiples():
+    return sum(x for x in range(200) if x % 3 == 0 or x % 5 == 0)
+ 
+print(sum_multiples()) # Output: 9168
