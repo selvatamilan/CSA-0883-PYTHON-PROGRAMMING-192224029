@@ -1,0 +1,32 @@
+def find_mth_max_nth_min(arr, m, n):
+    if m > len(arr) or n > len(arr):
+        return None, None
+    sorted_arr = sorted(arr)
+    mth_max = sorted_arr[-m]
+    nth_min = sorted_arr[n-1]
+    return mth_max, nth_min
+ 
+def calculate_operations(arr, m, n):
+    mth_max, nth_min = find_mth_max_nth_min(arr, m, n)
+    if mth_max is None or nth_min is None:
+        return "Invalid values for M or N"
+    sum_result = mth_max + nth_min
+    diff_result = mth_max - nth_min
+    prod_result = mth_max * nth_min
+    return mth_max, nth_min, sum_result, diff_result, prod_result
+ 
+# Sample Input
+array = [14, 16, 87, 36, 25, 89, 34]
+M = 1
+N = 3
+mth_max, nth_min, sum_result, diff_result, prod_result = calculate_operations(array, M, N)
+print(f"1st Maximum Number = {mth_max} 3rd Minimum Number = {nth_min} Sum = {sum_result}")
+print(f"Difference = {diff_result}")
+print(f"Product = {prod_result}")
+ 
+# Test cases
+print(calculate_operations([16, 16, 16, 16, 16], 0, 1))
+print(calculate_operations([0, 0, 0, 0], 1, 2))
+print(calculate_operations([-12, -78, -35, -42, -85], 3, 3))
+print(calculate_operations([15, 19, 34, 56, 12], 6, 3))
+print(calculate_operations([85, 45, 65, 75, 95], 5, 7))
