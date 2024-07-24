@@ -1,0 +1,13 @@
+def count_negatives(lst):
+    return sum(1 for x in lst if float(x) < 0)
+ 
+# Sample Input
+lst = [16, -18, 27, -16, 23, -21, 19]
+print(f"Number of negative numbers in List of elements = {count_negatives(lst)}")
+ 
+# Test cases
+print(count_negatives([-26, 28, 37, -26, 33, -31, -29]))
+print(count_negatives([1.6, 1.8, 2.7, -1.6, 2.3, -2.1, 0.19]))
+print(count_negatives([0, 160, 180, 270, 160, 230, 210, 190, 0]))
+print(count_negatives([-16, 2.8, -7, -1.5, 2.8, -2.8, -0.19]))
+print(count_negatives([-160, -160, -180, -270, -160, -230, -210, 1-90, 0]))
