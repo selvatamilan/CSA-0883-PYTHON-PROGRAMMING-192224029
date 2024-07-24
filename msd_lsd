@@ -1,0 +1,6 @@
+def msd_lsd(num):
+    num_str = str(num)
+    return f"LSB: {num_str[0]} MSB: {num_str[-1]}"
+ 
+num = 1267899
+print(msd_lsd(num)) # Output: "LSB: 1 MSB: 9"
